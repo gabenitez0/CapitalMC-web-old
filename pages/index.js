@@ -12,7 +12,7 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>Capital Minecraft | ¡Construye tu propia ciudad!</title>
+        <title>Capital Minecraft | Construye tu propio imperio</title>
         <meta
           name="description"
           content="Capital Minecraft es un servidor de Survival Vanilla y Ciudades Towny"
