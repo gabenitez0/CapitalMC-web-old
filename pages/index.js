@@ -2,11 +2,10 @@ import Head from "next/head";
 import dynamic from 'next/dynamic'
 
 //COMPONENTS
-import Header from "../components/Header";
-import Services from "../components/Services";
-const Features = dynamic(() => import('../components/Features'))
-const Soporte = dynamic(() => import('../components/Soporte'))
-const Contacto = dynamic(() => import('../components/Contacto'), {ssr: false})
+import Header from "../components/Landing/Header";
+import Encontranos from "../components/Landing/Encontranos";
+const Features = dynamic(() => import('../components/Landing/Features'))
+const Tokens = dynamic(() => import('../components/Landing/Tokens'))
 
 export default function IndexPage() {
   return (
@@ -24,9 +23,9 @@ export default function IndexPage() {
       </Head>
 
       <Header />
-      <Services />
+      <Encontranos />
       <Features />
-      <Soporte />
+      <Tokens />
 
       <style jsx>{`
         :global(.links a) {

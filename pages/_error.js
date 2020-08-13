@@ -4,7 +4,7 @@ export default function Error() {
   return (
     <>
       <Head>
-        <title>Solicitud enviada | 1tiendaonline - Automatiza tu negocio</title>
+        <title>Capital Minecraft | Página no encontrada</title>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <section id="error">
