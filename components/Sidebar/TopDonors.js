@@ -10,7 +10,7 @@ export default function ToPDonors(){
             </ul></b>
         </div>
         <style jsx>{`
-            .objetivos{
+            .topdonors{
                 max-width: 270px;
                 min-width: 250px;
             }
