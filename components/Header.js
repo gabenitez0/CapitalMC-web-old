@@ -11,6 +11,7 @@ export default function HeaderComp({page}) {
             <a className="button-primary">
               IP: CapitalMC.wtf
             </a>
+            <a className="link">Ver Tienda</a>
           </div>
         </div>
       </header>

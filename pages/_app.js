@@ -130,6 +130,7 @@ export default class Layout extends App {
             box-sizing: border-box;
             min-width: 120px;
             font-size: 14px;
+            letter-spacing: 1px;
             text-transform: uppercase;
           }
           .button-primary:hover {
@@ -157,7 +158,8 @@ export default class Layout extends App {
             padding: 5px 10px;
             min-width: 130px;
             font-size: 14px;
-            color: var(--color-secondary);
+            color: white;
+            letter-spacing: 1px;
             text-transform: uppercase;
           }
 
