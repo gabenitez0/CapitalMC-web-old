@@ -7,7 +7,6 @@ export default function Objetivos(){
         <style jsx>{`
             .objetivos{
                 max-width: 270px;
-                min-width: 250px;
             }
             h3{
                 font-weight: 600

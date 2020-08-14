@@ -125,6 +125,9 @@ export default function Services() {
         @media screen and (min-width: 990px) {
         }
         @media only screen and (max-width: 991px) {
+          section {
+            padding: 40px 0 20px 0;
+          }
         }
       `}</style>
     </section>

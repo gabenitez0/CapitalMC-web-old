@@ -12,6 +12,7 @@ export default function Sidebar(){
             section{
                 padding-top: 20px;
                 background: #eff3f7;
+                min-width: 320px;
             }
             :global(#sidebar div){
                 padding: 20px 30px;

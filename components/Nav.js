@@ -51,19 +51,19 @@ export default function Nav() {
         }
         .links a {
           color: white;
-          margin-left: 20px;
+          margin-left: 30px;
+          letter-spacing: 1px;
           text-decoration: none;
           font-weight: 400
-        }
-
-        @media screen and (max-width: 700px){
-          .links{
-            display: none;
-          }
         }
         @media screen and (min-width: 992px){
           .nav{
             max-width: 970px; 
+          }
+        }
+        @media screen and (min-width: 1220px){
+          .nav{
+            max-width: 1170px; 
           }
         }
       `}</style>

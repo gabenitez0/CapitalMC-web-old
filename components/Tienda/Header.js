@@ -46,18 +46,6 @@ export default function HeaderComp() {
           }
           @media screen and (min-width: 990px) {
           }
-          @media (max-width: 990px) {
-            section {
-              padding-top: 50px;
-              padding-bottom: 80px;
-            }
-          }
-          @media only screen and (max-width: 480px) {
-            section {
-              padding-top: 50px;
-              padding-bottom: 80px;
-            }
-          }
         `}
       </style>
     </section>

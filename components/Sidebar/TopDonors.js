@@ -12,7 +12,6 @@ export default function ToPDonors(){
         <style jsx>{`
             .topdonors{
                 max-width: 270px;
-                min-width: 250px;
             }
             h3{
                 font-weight: 600

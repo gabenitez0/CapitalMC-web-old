@@ -47,8 +47,8 @@ export default class Layout extends App {
 
           h1 {
             color: var(--color-secondary);
-            font-size: 42px;
-            font-weight: 300;
+            font-size: 32px;
+            font-weight: 400;
             line-height: 1.31;
             letter-spacing: -0.025em;
             margin-bottom: 25px;
