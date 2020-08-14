@@ -8,8 +8,9 @@ import Features from "../components/Landing/Features";
 export default function IndexPage() {
   const page = {
     title: "¡Construye tu Propio Imperio!",
-    desc: "Capital Minecraft es un servidor de Survival Vanilla y Ciudades Towny, ¡puedes ser integrante o dueño de una ciudad entera!",
-    button: "IP: capitalmc.wtf"
+    desc: "Capital Minecraft es un servidor de Survival y Ciudades Towny, ¡puedes ser integrante o dueño de una ciudad entera!",
+    button: "IP: capitalmc.wtf",
+    button2: "Ver tienda"
   }
   
   return (
@@ -18,7 +19,7 @@ export default function IndexPage() {
         <title>Capital Minecraft | Construye tu propio imperio</title>
         <meta
           name="description"
-          content="Capital Minecraft es un servidor de Survival Vanilla y Ciudades Towny"
+          content="Capital Minecraft es un servidor de Survival y Ciudades Towny"
         />
         <meta
           name="keywords"

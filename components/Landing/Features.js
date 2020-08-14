@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import YouTube from "react-lazyload-youtube";
 
 export default function Features() {
   const [visible, setVisible] = useState(false);

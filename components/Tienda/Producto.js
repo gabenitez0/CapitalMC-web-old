@@ -62,6 +62,13 @@ export default function Producto({r}) {
     margin-top: 15px!important;
     background: #84445b;
   }
+  h2{
+    margin: 5px 0;
+  }
+  span{
+    margin-bottom: 30px;
+    display: block;
+  }
   h3 {
     margin: 0
   }

@@ -1,10 +1,8 @@
 import App from "next/app";
 import Head from "next/head";
 import "../static/icons/font/flaticon.css";
-import "react-lazyload-youtube/dist/index.css";
 
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 
 export default class Layout extends App {
 
@@ -20,7 +18,7 @@ export default class Layout extends App {
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;600&display=swap"
             rel="stylesheet"
           ></link>
-          <meta property="og:image" content="/favicon.png" />
+          <meta property="og:image" content="/static/meta.jpg" />
         </Head>
         <Nav/>
         <Component {...pageProps} />
@@ -86,7 +84,7 @@ export default class Layout extends App {
             color: var(--color-tertiary);
             line-height: 2.1;
           }
-          ul{
+          ul, ol{
             padding-left: 20px;
             line-height: 25px;
             color: var(--color-tertiary);

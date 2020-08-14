@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeaderComp({page}) {
   return (
     <section id="header">
@@ -8,10 +10,13 @@ export default function HeaderComp({page}) {
           {page.desc}
           </p>
           <div className="buttons">
-            <a className="button-primary">
-              IP: CapitalMC.wtf
+            <a className="button-primary" style={{marginRight: 20}}>
+              {page.button}
             </a>
-            <a className="link">Ver Tienda</a>
+            <Link href="/tienda">
+              <a className="link">{page.button2}
+              <i className="flaticon-right-arrow" /></a>
+            </Link>
           </div>
         </div>
       </header>
@@ -47,7 +52,7 @@ export default function HeaderComp({page}) {
           }
           i:before {
             font-size: 14px;
-            margin-left: 3px;
+            margin-left: 5px;
           }
           @media screen and (min-width: 480px) {
             .title {
