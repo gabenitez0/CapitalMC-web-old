@@ -108,6 +108,7 @@ export default function Services() {
       <style jsx>{`
         section {
           padding: 40px 30px 20px 0;
+          width: 100%;
         }
         .services {
           box-sizing: border-box;
