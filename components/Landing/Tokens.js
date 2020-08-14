@@ -4,7 +4,7 @@ export default function Soporte() {
     <section id="soporte">
       <div className="container">
         <div className="title-section">
-          <span>Tokens y Donaciones</span>
+          <span>Tienda </span>
           <h2>¿Qué son los Tokens y cómo consigo Vip?</h2>
         </div>
         <div className="soporte">

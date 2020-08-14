@@ -7,7 +7,7 @@ export default function Services() {
       url: "http://discord.capitalmc.wtf",
       target: "_blank",
       desc:
-        "Nuestro principal medio de comunicación es a través de Discord",
+        "Nuestro principal medio de comunicación directa es a través de Discord",
       bg:
         "linear-gradient(-60deg,rgba(50, 207, 167, 0.75),rgba(150, 201, 61, 0.75))",
     },
@@ -28,7 +28,7 @@ export default function Services() {
       url: "http://fb.capitalmc.wtf",
       target: "_blank",
       desc:
-        "Página de Facebook utilizada principalmente con fines publicitarios",
+        "Encontrá contenido, noticias y actualizaciones de Capital Minecraft",
       bg:
         "linear-gradient(-60deg, rgba(236, 0, 140, 0.75), rgba(255, 103, 103, 0.75))",
     },
@@ -39,7 +39,7 @@ export default function Services() {
       <main className="container">
         <div className="title-section">
           <span>Encontranos</span>
-          <h2>¿Cómo nos comunicamos?</h2>
+          <h2>¿Dónde estamos?</h2>
         </div>
         <div className="services">
           {services.map((s) => (

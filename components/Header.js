@@ -1,11 +1,11 @@
-export default function HeaderComp() {
+export default function HeaderComp({page}) {
   return (
     <section id="header">
       <header className="container">
         <div className="title">
-          <h1>¡Construye tu Propio Imperio!</h1>
+          <h1>{page.title}</h1>
           <p>
-          Capital Minecraft es un servidor de Survival Vanilla y Ciudades Towny, ¡puedes ser integrante o dueño de una ciudad entera!
+          {page.desc}
           </p>
           <div className="buttons">
             <a className="button-primary">
@@ -18,20 +18,22 @@ export default function HeaderComp() {
       <style jsx>
         {`
           section {
-            padding-top: 240px;
-            padding-bottom: 180px;
             background-image: url("/static/header2.jpg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             width: 100%;
-            height: auto;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            min-height: 550px;
+          }
+          header{
+            width: 100%;
           }
           .title {
             width: 100%;
             box-sizing: border-box;
-            padding-left: 15px;
-            padding-right: 15px;
           }
           h1, p{
             color: white;

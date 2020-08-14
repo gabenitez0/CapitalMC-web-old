@@ -3,21 +3,11 @@ import Head from "next/head";
 import "../static/icons/font/flaticon.css";
 import "react-lazyload-youtube/dist/index.css";
 
-import TagManager from "react-gtm-module";
-
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-/* const tagManagerArgs = {
-  gtmId: "GTM-K755N37",
-  auth: 'w_AG8jKZqBGQk3uNJd3rhA',
-  preview: 'env-3'
-}; */
-
 export default class Layout extends App {
-  /* componentDidMount() {
-    TagManager.initialize(tagManagerArgs);
-  } */
+
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -32,6 +22,7 @@ export default class Layout extends App {
           ></link>
           <meta property="og:image" content="/favicon.png" />
         </Head>
+        <Nav/>
         <Component {...pageProps} />
 
         <style jsx global>{`
@@ -61,6 +52,7 @@ export default class Layout extends App {
             line-height: 1.31;
             letter-spacing: -0.025em;
             margin-bottom: 25px;
+            margin-top: 0;
           }
           h1.h2 {
             margin: 0px;
@@ -94,6 +86,11 @@ export default class Layout extends App {
             color: var(--color-tertiary);
             line-height: 2.1;
           }
+          ul{
+            padding-left: 20px;
+            line-height: 25px;
+            color: var(--color-tertiary);
+          }
           .title-section {
             box-sizing: border-box;
             margin-bottom: 40px;
@@ -121,8 +118,8 @@ export default class Layout extends App {
             justify-content: center;
             color: rgb(255, 255, 255);
             background-color: var(--color-primary);
-            min-height: 48px;
-            border-radius: 2px;
+            min-height: 45px;
+            border-radius: 4px;
             font-family: inherit;
             font-weight: 700;
             text-decoration: none;

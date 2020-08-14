@@ -1,20 +1,19 @@
-import {useEffect} from 'react';
 import Head from "next/head";
-import dynamic from 'next/dynamic'
 
 //COMPONENTS
-import Header from "../components/Tienda/Header";
+import Header from "../components/Header";
 import Productos from "../components/Tienda/Productos";
+import Sidebar from "../components/Sidebar";
 import Encontranos from "../components/Landing/Encontranos";
-const Features = dynamic(() => import('../components/Landing/Features'))
+import Features from "../components/Landing/Features";
 
 export default function IndexPage() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.paypal.com/sdk/js?client-id=AUz4sZaei_S9MSlqUwkn7t4pDFbE8RMFjpaHxfhyWm6nZyVnWqiu1yQkEtz5tn2GyuIvb2uwUAjg3G2n&locale=en_US";
-    document.body.appendChild(script);
-  }, [])
 
+  const page = {
+    title: "Tienda Capital MC",
+    desc: "Todo el dinero recaudado será principalmente destinado al mantenimiento, mejoras y actualizaciones del servidor. ¡Con tu compra estás contribuyendo a que sigamos mejorando y generando una gran comunidad!"
+  }
+  
   return (
     <>
       <Head>
@@ -29,17 +28,40 @@ export default function IndexPage() {
         />
       </Head>
 
-      <Header />
+      <Header page={page}/>
+      <div className="sidebar container">
       <Productos />
+      <Sidebar />
+      </div>
       <Encontranos />
       <Features />
 
       <style jsx>{`
-        :global(.links a) {
-          color: white;
-          margin-left: 20px;
-          text-decoration: none;
-          font-weight: 300
+        :global(.nav){
+          position: initial;
+          padding: 20px 0;
+          width: 100%
+        }
+        :global(.links a){
+          color: var(--color-secondary);
+        }
+        :global(a h2){
+          color: var(--color-secondary);
+        }
+        :global(section#header){
+          height: 50vh;
+          min-height: 350px;
+        }
+        :global(.buttons){
+          display: none
+        }
+        .sidebar{
+          display: flex;
+        }
+        @media (max-width: 991px) {
+          .sidebar{
+            flex-direction: column;
+          }
         }
       `}</style>
     </>

@@ -11,8 +11,8 @@ export default function Features() {
 
   const features = [
     "Comunidad amigable y de rápida integración",
-    "Recibirás ofertas de ciudades en cuento entres",
-    "Interfaz accesible y fácil de entender (/menu)",
+    "Recibirás ofertas de ciudades todo el tiempo",
+    "Guía simple dentro del server: /menu",
     "Actualizaciones y mejoras constantes",
     "Servidor Dedicado 24/7 sin lag",
   ];

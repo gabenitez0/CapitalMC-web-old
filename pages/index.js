@@ -1,13 +1,17 @@
 import Head from "next/head";
-import dynamic from 'next/dynamic'
 
 //COMPONENTS
-import Header from "../components/Landing/Header";
+import Header from "../components/Header";
 import Encontranos from "../components/Landing/Encontranos";
-const Features = dynamic(() => import('../components/Landing/Features'))
-const Tokens = dynamic(() => import('../components/Landing/Tokens'))
+import Features from "../components/Landing/Features";
 
 export default function IndexPage() {
+  const page = {
+    title: "¡Construye tu Propio Imperio!",
+    desc: "Capital Minecraft es un servidor de Survival Vanilla y Ciudades Towny, ¡puedes ser integrante o dueño de una ciudad entera!",
+    button: "IP: capitalmc.wtf"
+  }
+  
   return (
     <>
       <Head>
@@ -22,18 +26,11 @@ export default function IndexPage() {
         />
       </Head>
 
-      <Header />
+      <Header page={page}/>
       <Encontranos />
       <Features />
-      <Tokens />
 
       <style jsx>{`
-        :global(.links a) {
-          color: white;
-          margin-left: 20px;
-          text-decoration: none;
-          font-weight: 300
-        }
       `}</style>
     </>
   );

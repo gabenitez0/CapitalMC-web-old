@@ -17,7 +17,6 @@ export default function Producto({r}) {
 
     <div id={r.id} className="modalBg" style={modal} onClick={() => setVisible(false)}/>
     <div id={r.id} className="modal" style={modal}>
-        <p className="icon">x</p>
         <div className="imagen">
         <img src={r.img}/>
         </div>
@@ -46,6 +45,7 @@ export default function Producto({r}) {
             MercadoPago
             </a>
         </div>
+          <a className="cerrar" onClick={() => setVisible(false)}> ← Cerrar </a>
         </div>
     </div>
 <style jsx>{`
@@ -53,12 +53,9 @@ export default function Producto({r}) {
     width: calc(100% - 20px);
     padding: 10px 8px;
   }
-  .icon{
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 5px 20px;
-      font-size: 20px;
+  .cerrar{
+      padding-bottom: 20px;
+      cursor: pointer;
   }
   div.button-primary{
     margin-top: 15px!important;
@@ -83,12 +80,9 @@ export default function Producto({r}) {
   a img{
     max-height: 20px
   }
-  ul{
-    padding-left: 20px;
-    line-height: 25px;
-  }
   .imgProducto{
-    width: 100%
+    width: 100%;
+    border-radius: 4px;
   }
   .modalBg{
     top: 0;
@@ -107,10 +101,10 @@ export default function Producto({r}) {
     top: 0;
     margin: 30px 30px 0 30px;
     left: calc(50% - 480px);
-    border-radius: 4px;
+    border-radius: 8px;
     max-width: 840px;
     width: 100%;
-    max-height: calc(100% - 90px);
+    max-height: calc(100% - 65px);
     overflow-y: auto;
   }
   .imagen{
@@ -119,6 +113,7 @@ export default function Producto({r}) {
   }
   .imagen img{
     width: 100%;
+    border-radius: 4px;
   }
   .detalles{
     width: 50%;
@@ -133,7 +128,8 @@ export default function Producto({r}) {
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
-    border: 1px solid rgb(241, 244, 246);
+    border: 1px solid #e8ecef;
+    border-radius: 4px;
     transition: all .2s ease;
     text-decoration: none;
     cursor: pointer;
@@ -141,7 +137,13 @@ export default function Producto({r}) {
   .service:hover{
       box-shadow: rgba(39, 79, 117, 0.2) 0px 40px 90px -30px;
   }
-  @media screen and (max-width: 992px) {
+  
+  @media (max-width: 1219px) {
+    .service {
+      width: calc((100% / 2) - 12px);
+    }
+  }
+  @media screen and (max-width: 991px) {
     .modal{
       display: flex;
       flex-direction: column;
@@ -153,16 +155,30 @@ export default function Producto({r}) {
       width: 100%;
       padding-left: 0;
     }
-  }
-  @media screen and (max-width: 550px) {
-    .modal{
-      left: 0;
-      top: 0;
-      margin: 0;
-      width: calc(100% - 40px);
-      max-height: 100%;
-      height: 100%;
-      padding: 20px;
+    .service {
+      width: calc((100% / 3) - 12px);
+    }
+    @media (max-width: 768px) {
+      .service {
+        width: calc((100% / 2) - 12px);
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .service {
+        width: 100%;
+        margin-right: 0;
+      }
+      .modal{
+        left: 0;
+        top: 0;
+        margin: 0;
+        width: calc(100% - 40px);
+        max-width: 505px;
+        max-height: 100%;
+        height: calc(100% - 40px);
+        padding: 20px;
+        border-radius: 0;
+      }
     }
   }
 `}</style>

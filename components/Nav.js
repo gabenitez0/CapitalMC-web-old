@@ -6,33 +6,34 @@ export default function Nav() {
       <div className="nav">
         <Link href="/">
           <a>
-            <img className="logo" src="/static/logo.svg" />
+            <h2>Capital MC</h2>
           </a>
         </Link>
         <div className="links">
           <Link href="/">
             <a>Inicio</a>
           </Link>
-          <Link href="/#services">
-            <a>Servicios</a>
-          </Link>
-          <Link href="/#features">
-            <a>Automatización</a>
-          </Link>
-          <Link href="/nosotros">
-            <a>Nosotros</a>
+          <Link href="/tienda">
+            <a>Tienda</a>
           </Link>
         </div>
       </div>
       <style jsx global>{`
         .nav {
-          top: 20px;
           position: absolute;
+          padding: 20px 0;
           display: flex;
           justify-content: space-between;
           max-width: 750px; 
           align-items: center;
           width: calc(100% - 60px);
+        }
+        a h2{
+          color: white;
+          font-weight: 600;
+        }
+        a{
+          text-decoration: none;
         }
         .logo {
           height: 45px;
@@ -43,10 +44,16 @@ export default function Nav() {
         .links :global(a) {
           text-decoration: none
           margin-left: 20px;
-          font-weight: 300;
+          font-weight: 400;
         }
         .links :global(a:hover) {
           border-bottom: 1px solid;
+        }
+        .links a {
+          color: white;
+          margin-left: 20px;
+          text-decoration: none;
+          font-weight: 400
         }
 
         @media screen and (max-width: 700px){

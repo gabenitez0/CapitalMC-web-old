@@ -13,20 +13,19 @@ export default function HeaderComp() {
       <style jsx>
         {`
           section {
-            padding-top: 50px;
-            padding-bottom: 80px;
             background-image: url("/static/header2.jpg");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             width: 100%;
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
             height: auto;
           }
           .title {
             width: 100%;
             box-sizing: border-box;
-            padding-left: 15px;
-            padding-right: 15px;
           }
           h1, p{
             color: white;

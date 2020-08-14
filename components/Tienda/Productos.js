@@ -74,7 +74,7 @@ export default function Services() {
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-fb3e3855-0b64-4262-b14e-618e92c86f3c"
     },
     {
-      id: 2,
+      id: 3,
       img: "/static/tienda/5000tokens.jpg",
       title: "5000 Tokens",
       price: 30,
@@ -86,30 +86,28 @@ export default function Services() {
 
   return (
     <section id="services">
-      <main className="container">
-        <div className="title-section">
-          <h2>Rangos</h2>
-        </div>
-        <div className="services">
-          {rangos.map(r => 
-            <Producto key={r.id} r={r}/>
-          )}
-        </div>
+      <div className="title-section">
+        <h2>Rangos</h2>
+      </div>
+      <div className="services">
+        {rangos.map(r => 
+          <Producto key={r.id} r={r}/>
+        )}
+      </div>
 
-        <div className="title-section" style={{marginTop: 60}}>
-          <h2>Tokens</h2>
-        </div>
-        <div className="services">
-          {tokens.map(r => 
-            <Producto key={r.id} r={r}/>
-          )}
-        </div>
-      </main>
+      <div className="title-section" style={{marginTop: 60}}>
+        <h2>Tokens</h2>
+      </div>
+      <div className="services">
+        {tokens.map(r => 
+          <Producto key={r.id} r={r}/>
+        )}
+      </div>
 
 
       <style jsx>{`
         section {
-          padding: 80px 0px;
+          padding: 40px 30px 20px 0;
         }
         .services {
           box-sizing: border-box;
@@ -121,8 +119,6 @@ export default function Services() {
         }
         h2{
           text-align: left;
-          border-bottom: 1px solid gray;
-          padding-bottom: 5px;
         }
         @media screen and (min-width: 480px) {
         }
