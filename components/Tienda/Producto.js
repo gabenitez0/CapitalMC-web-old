@@ -2,7 +2,8 @@ import {useState} from 'react';
 export default function Producto({r}) {
     const [visible, setVisible] = useState(false);
     const modal = {
-      display: visible ? 'flex' : 'none'
+      zIndex: visible ? 10 : -1,
+      opacity: visible ? 1 : 0
     }
     return(
 <>
@@ -91,21 +92,23 @@ export default function Producto({r}) {
     height: 100%;
     position: fixed;
     background: rgb(0 0 0 / 40%);
+    transition: all .3s;
+    transform: cubic-bezier(0.25, 1, 0.5, 1);
   }
   .modal{
     position: fixed;
     display: flex;
     background: white;
     padding: 30px;
-    padding-bottom: 0;
     top: 0;
     margin: 30px 30px 0 30px;
     left: calc(50% - 480px);
-    border-radius: 8px;
     max-width: 840px;
     width: 100%;
-    max-height: calc(100% - 65px);
+    max-height: calc(100% - 90px);
     overflow-y: auto;
+    transition: all .3s;
+    transform: cubic-bezier(0.25, 1, 0.5, 1);
   }
   .imagen{
     width: 50%;
