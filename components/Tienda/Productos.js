@@ -7,7 +7,7 @@ export default function Services() {
     {
       id: 0,
       img: "/static/tienda/vip.jpg",
-      title: "Rango Presidente",
+      title: "Rango Vip",
       price: 5,
       features: [
         "Fly dentro de la Town (/tfly)",
@@ -26,7 +26,7 @@ export default function Services() {
     {
       id: 1,
       img: "/static/tienda/vip+.jpg",
-      title: "Rango Dictador",
+      title: "Rango Vip+",
       price: 10,
       features: [
         "Fly completo en el world Survival y Towny (/fly)",
