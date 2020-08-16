@@ -11,6 +11,7 @@ export default function Services() {
       price: 5,
       features: [
         "Fly dentro de la Town (/tfly)",
+        "Jobs: x1.5 exp (/jobs)",
         "Cambiar Skin (/skin)",
         "Cambiar Nick (/nick)",
         "Comando para abrir Enderchest (/enderchest)",
@@ -32,6 +33,7 @@ export default function Services() {
         "Recompensa Vip+: 1 Llave de Dictador cada 12 hs (/rewards)",
         "Comando para reparar objetos (/repair)",
         "Volver a la ubicación de muerte (/back)",
+        "Jobs: x2.0 exp y hasta 3 jobs (/jobs)",
         "Fly dentro de la Town (/tfly)",
         "Cambiar Skin (/skin)",
         "Cambiar Nick (/nick)",
