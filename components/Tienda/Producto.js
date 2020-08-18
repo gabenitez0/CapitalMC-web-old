@@ -12,7 +12,7 @@ export default function Producto({r}) {
         <img className="imgProducto" src={r.img} />
         </div>
         <h3>{r.title}</h3>
-        <p>${r.price}.00 USD</p>
+        <p>${r.price} USD</p>
         <div id={r.id} className="button-primary" onClick={() => setVisible(true)}>Ver detalles</div>
     </div>
 
@@ -23,7 +23,7 @@ export default function Producto({r}) {
         </div>
         <div className="detalles">
         <h2>{r.title}</h2>
-        <span>${r.price}.00 USD</span>
+        <span>${r.price} USD</span>
         <ul>
             {r.features.map(f =>
             <li key={Math.random()}>{f}</li>
