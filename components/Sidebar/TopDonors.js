@@ -4,9 +4,11 @@ export default function ToPDonors(){
             <h3>Agradecimientos especiales:</h3>
             <p>Estos son los jugadores que más contribuyeron económicamente al servidor:</p>
             <b><ul>
-                <li><b>Carlosmax2273: $43,5USD</b></li>
-                <li>Maxiquevedo: $10USD</li>
-                <li>IamCris: $7.5USD</li>
+                <li>Carlosmax2273: $54.50 USD</li>
+                <li>Maxiquevedo: $10.00 USD</li>
+                <li>IamCris: $7.50 USD</li>
+                <li>Masterke28: $5.00 USD</li>
+                <li>Fali: $5.00 USD</li>
             </ul></b>
         </div>
         <style jsx>{`
