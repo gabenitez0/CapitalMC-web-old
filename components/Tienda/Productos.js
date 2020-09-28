@@ -3,22 +3,52 @@ import Producto from './Producto'
 
 export default function Services() {
 
+  const promos = [
+    {
+      id: 0,
+      img: "/static/tienda/oferta1.jpg",
+      title: "PROMO DICTADOR: Vip+ Permanente + Tokens Gratis",
+      price: "10.00",
+      features: [
+        "VIP+ PERMANENTE!",
+        "+500 Tokens GRATIS!",
+        "Todos los beneficios de Vip y Vip+"
+      ],
+      paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XK79V7GBZ7R2J",
+      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-657c6438-9c6f-44fe-b69d-87eabf6f88a1"
+    },
+    {
+      id: 1,
+      img: "/static/tienda/oferta1.jpg",
+      title: "PROMO PRESIDENTE: Vip Permanente + Tokens Gratis",
+      price: "5.00",
+      features: [
+        "VIP PERMANENTE!",
+        "+500 Tokens GRATIS!",
+        "Todos los beneficios de Vip y Vip+"
+      ],
+      paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C5TFAUFW86W7L",
+      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-d50f2d80-1ed5-47eb-a1d8-93f3fcfe232c"
+    },
+  ];
+
   const rangos = [
     {
       id: 0,
       img: "/static/tienda/vip.jpg",
-      title: "Rango Vip",
+      title: "Rango Vip Mensual",
       price: "5.00",
       features: [
-        "Fly dentro de la Town (/tfly)",
-        "Jobs: x1.5 exp (/jobs)",
-        "Cambiar Skin (/skin)",
-        "Cambiar Nick (/nick)",
-        "Comando para abrir Enderchest (/enderchest)",
-        "Recompensas Vip (1 Llave de Presidente cada 2 hs) (/rewards)",
-        "Escribir en color Chat y Nick",
-        "3 Sethomes + bed home (/sethome <home>)",
-        "10 Items para vender en Auctions (/ah)",
+        "Money Boost: x1.5 de ganancia de dinero",
+        "Mochila: 36 Slots + Keep Inventory",
+        "Color: Escribir en color Chat y Nick",
+        "/tFly: Vuela dentro de tu Town",
+        "/Rewards: 1 Llave de Presidente cada 2 hs",
+        "/Skin: Cambiar Skin a la que quieras",
+        "/Nick: Cambiar Nick al que quieras",
+        "/Enderchest: Abre tu Enderchest donde quieras con un comando",
+        "/Ah: 10 Items para vender en Auctions",
+        "/Sethome: 3 Sethomes + Bed home"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7BDC45Z2KGWK2",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-1f962917-e564-474a-ae27-0f5fb0053e9c"
@@ -26,22 +56,22 @@ export default function Services() {
     {
       id: 1,
       img: "/static/tienda/vip+.jpg",
-      title: "Rango Vip+",
+      title: "Rango Vip+ Mensual",
       price: "10.00",
       features: [
-        "Fly completo en el world Survival y Towny (/fly)",
-        "Recompensa Vip+: 1 Llave de Dictador cada 12 hs (/rewards)",
-        "Comando para reparar objetos (/repair)",
-        "Volver a la ubicación de muerte (/back)",
-        "Jobs: x2.0 exp y hasta 3 jobs (/jobs)",
-        "Fly dentro de la Town (/tfly)",
-        "Cambiar Skin (/skin)",
-        "Cambiar Nick (/nick)",
-        "Comando para abrir Enderchest (/enderchest)",
-        "Recompensa Vip: 1 Llave de Presidente cada 2 hs (/rewards)",
-        "Escribir en color Chat y Nick",
-        "3 Sethomes + bed home (/sethome <home>)",
-        "10 Items para vender en Auctions (/ah)",
+        "Money Boost: x2.0 de ganancia de dinero",
+        "Mochila: 54 Slots + Keep Inventory",
+        "Color: Escribir en color Chat y Nick",
+        "/Fly: Vuela libremente en todos los mundos",
+        "/Repair: Repara tus objetos libremente gratis",
+        "/Graves: TP a donde moriste (tu tumba)",
+        "/Rewards: 1 Llave de Dictador cada 12 hs",
+        "/Rewards: 1 Llave de Presidente cada 2 hs",
+        "/Skin: Cambiar Skin a la que quieras",
+        "/Nick: Cambiar Nick al que quieras",
+        "/Enderchest: Abre tu Enderchest donde quieras con un comando",
+        "/Ah: 10 Items para vender en Auctions",
+        "/Sethome: 6 Sethomes + Bed home"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJDL6FCSGWJWE",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-0ae43d31-d471-45b6-b2d4-334b61fe1c19"
@@ -90,6 +120,15 @@ export default function Services() {
   return (
     <section id="services">
       <div className="title-section">
+        <h2>¡Promociones únicas!</h2>
+      </div>
+      <div className="services promo">
+        {promos.map(r => 
+          <Producto key={r.id} r={r}/>
+        )}
+      </div>
+
+      <div className="title-section">
         <h2>Rangos</h2>
       </div>
       <div className="services">
@@ -98,7 +137,7 @@ export default function Services() {
         )}
       </div>
 
-      <div className="title-section" style={{marginTop: 60}}>
+      <div className="title-section">
         <h2>Tokens</h2>
       </div>
       <div className="services">
@@ -118,11 +157,16 @@ export default function Services() {
           display: flex;
           flex-wrap: wrap;
         }
+        .title-section:first-child{
+          margin-top: 0;
+        }
         .title-section{
           margin-bottom: 30px;
+          margin-top: 60px;
         }
         h2{
           text-align: left;
+          text-decoration: underline;
         }
         @media screen and (min-width: 480px) {
         }

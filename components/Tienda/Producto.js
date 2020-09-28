@@ -64,9 +64,10 @@ export default function Producto({r}) {
   }
   h2{
     margin: 5px 0;
+    line-height: 1.4
   }
   span{
-    margin-bottom: 30px;
+    margin: 20px 0 30px;
     display: block;
   }
   h3 {
@@ -132,6 +133,12 @@ export default function Producto({r}) {
   .service div {
     margin: 0px auto 20px;
   }
+  :global(.services.promo) .service {
+    width: calc((100% / 2) - 12px);
+  }
+  :global(.services.promo) .service h3, :global(.services.promo) .modal h2 {
+    font-weight: 600
+  }
   .service {
     width: calc((100% / 3) - 12px);
     padding-bottom: 10px;
@@ -177,6 +184,9 @@ export default function Producto({r}) {
       .service {
         width: 100%;
         margin-right: 0;
+      }
+      :global(.services.promo) .service {
+        width: 100%;
       }
       .modal{
         left: 0;
