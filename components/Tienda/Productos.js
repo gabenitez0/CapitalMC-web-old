@@ -12,7 +12,9 @@ export default function Services() {
       features: [
         "VIP+ PERMANENTE!",
         "+500 Tokens GRATIS!",
-        "Todos los beneficios de Vip y Vip+"
+        "1 Kit Completo de Armaduras y Herramientas de Netherite",
+        "Todos los beneficios de Vip y Vip+",
+        "Todas las modificaciones de mejora del rango a futuro están incluidas"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XK79V7GBZ7R2J",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-657c6438-9c6f-44fe-b69d-87eabf6f88a1"
@@ -25,7 +27,9 @@ export default function Services() {
       features: [
         "VIP PERMANENTE!",
         "+500 Tokens GRATIS!",
-        "Todos los beneficios de Vip y Vip+"
+        "1 Kit Completo de Armaduras y Herramientas de Netherite",
+        "Todos los beneficios de Vip y Vip+",
+        "Todas las modificaciones de mejora del rango a futuro están incluidas"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C5TFAUFW86W7L",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-d50f2d80-1ed5-47eb-a1d8-93f3fcfe232c"

@@ -71,7 +71,8 @@ export default function Producto({r}) {
     display: block;
   }
   h3 {
-    margin: 0
+    margin: 0;
+    padding: 0 20px;
   }
   .buy-buttons{
     margin-top: 20px;
