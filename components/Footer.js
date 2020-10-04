@@ -1,116 +1,36 @@
 import Link from 'next/link'
 
 export default function Footer() {
-  const footer = [
-    {
-      title: "Servicios",
-      links: [
-        {
-          name: "Desarrollo de Páginas Web",
-          url: "/#services",
-        },
-        {
-          name: "Desarrollo de Tiendas Online",
-          url: "/#services",
-        },
-        {
-          name: "Diseño Gráfico/UX/UI",
-          url: "/#services",
-        },
-        {
-          name: "Marketing y Publicidad",
-          url: "/#services",
-        },
-      ],
-    },
-    {
-      title: "Automatización",
-      links: [
-        {
-          name: "Automatización de Ventas",
-          url: "/#features",
-        },
-        {
-          name: "Automatización de Leads",
-          url: "/#features",
-        },
-        {
-          name: "Automatización de Bases de Datos",
-          url: "/#features",
-        },
-      ],
-    },
-    {
-      title: "Nosotros",
-      links: [
-        {
-          name: "Sobre nosotros",
-          url: "/nosotros",
-        },
-        {
-          name: "Términos y condiciones",
-          url: "/terminos-y-condiciones",
-        },
-        {
-          name: "Políticas de privacidad",
-          url: "/privacidad",
-        },
-      ],
-    },
-  ];
 
   return (
     <section id="footer">
       <div className="footer container">
-        <div className="logoCol">
-          <img className="logo" src="/static/logo.svg" />
-          <p>gabriel@1tienda.online</p>
-          <p>+54 9 1122542474</p>
-          <div className="social">
-            <a
-              href="https://facebook.com/1tiendaonline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="flaticon-facebook" />
-            </a>
-            <a
-              href="https://www.instagram.com/1tienda.online"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="flaticon-instagram-bosquejado" />
-            </a>
-          </div>
-        </div>
-        <div className="footerCols">
-          {footer.map((f) => (
-            <div className="col" key={f.title}>
-              <h3>{f.title}</h3>
-              <ul>
-                {f.links.map((n) => (
-                  <li key={n.name}>
-                    <Link href={n.url}><a>{n.name}</a></Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+          <h2>CapitalMC</h2>
+          <p>¡Te esperamos en el mejor servidor de Towny!</p>
+          <a href="http://Discord.Capitalmc.Wtf/" target="_blank">
+            Entrar al Discord
+          </a>
+          <p className="derechos">Todos los derechos reservados</p>
       </div>
 
       <style jsx>{`
         section {
           border-top: 1px solid rgb(239, 239, 239);
           margin-top: 40px;
+          position: relative;
         }
         .footer {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 80px 45px;
+          padding: 80px 45px 100px;
           background-image: url("/static/footer.png");
           background-repeat: no-repeat;
           background-position: center 50px;
+          text-align: center;
+        }
+        .derechos{
+          color: gray;
+          position: absolute;
+          bottom: 10px;
+          left: calc(50% - 111px);
         }
         .logo {
           height: 38px;
@@ -118,11 +38,11 @@ export default function Footer() {
         }
         a {
           line-height: 2.1;
-          text-decoration: none;
-          margin-right: 15px;
+          text-decoration: underline;
+          color: var(--color-primary)
         }
         i {
-          font-size: 21px;
+          font-size: 15px;
           color: rgb(15 33 55 / 75%);
         }
         i:hover {
@@ -139,6 +59,9 @@ export default function Footer() {
         p {
           color: var(--color-secondary);
           margin-bottom: ;
+        }
+        h2{
+          color: var(--color-primary);
         }
         h3 {
           box-sizing: border-box;

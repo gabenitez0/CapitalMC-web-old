@@ -3,6 +3,7 @@ import Head from "next/head";
 import "../static/icons/font/flaticon.css";
 
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export default class Layout extends App {
 
@@ -22,6 +23,7 @@ export default class Layout extends App {
         </Head>
         <Nav/>
         <Component {...pageProps} />
+        <Footer/>
         <script src="https://www.paypal.com/sdk/js?client-id=AUz4sZaei_S9MSlqUwkn7t4pDFbE8RMFjpaHxfhyWm6nZyVnWqiu1yQkEtz5tn2GyuIvb2uwUAjg3G2n&locale=es_ES"></script>
 
         <style jsx global>{`
