@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import Paypal from './mediosPago/paypal';
+
 export default function Producto({r}) {
     const [visible, setVisible] = useState(false);
     const modal = {
@@ -32,18 +34,12 @@ export default function Producto({r}) {
         <p>Tu nick en el server:</p>
         <input type="text"/>
         <div className="buy-buttons">
-            <a className="button-primary" 
-            href={r.paypal} 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img src="/static/tienda/pp.svg" style={{marginRight: 5}}/><img src="/static/tienda/paypal.svg"/>
-            </a>
-            <a className="button-primary" 
-            style={{background: '#009cde', color: 'white', marginBottom: 30}} 
+            <Paypal price={r.price} name={r.title}/>
+            <a className="button-primary"
             href={r.mercadopago} 
             target="_blank" 
             rel="noopener noreferrer">
-            MercadoPago
+            <sup>Pagar con</sup> <b>MercadoPago</b>
             </a>
         </div>
           <a className="cerrar" onClick={() => setVisible(false)}> ← Cerrar </a>
@@ -78,11 +74,21 @@ export default function Producto({r}) {
     margin-top: 20px;
   }
   a.button-primary{
-    background: #ffc439;
-    color: #003087;
+    background: #009cde;
+    color: white;
     width: 100%;
-    min-height: 40px;
-    margin-bottom: 10px;
+    min-height: 36px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: unset;
+    font-size: 15px;
+  }
+  sup{
+    top: -3px;
+    margin-right: 3px;
+    position: relative;
   }
   div.button-primary:hover, a.button-primary:hover{
     box-shadow: none
@@ -92,7 +98,7 @@ export default function Producto({r}) {
   }
   .imgProducto{
     width: 100%;
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
   }
   .modalBg{
     top: 0;

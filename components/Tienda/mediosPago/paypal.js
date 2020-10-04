@@ -1,14 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 
-export default function Paypal({product}) {
+export default function Paypal({price, name}) {
   const paypalRef = useRef();
+
+  const product = {
+    price: price,
+    name: name
+  }
 
   useEffect(() => {
     if (window.paypal) {
     window.paypal
       .Buttons({
       style: {
-          height: 32,
+          height: 36,
           size: 'responsive',
           color: 'blue',
           layout: 'horizontal',
@@ -30,6 +35,7 @@ export default function Paypal({product}) {
         },
         onApprove: async (data, actions) => {
             console.log("exito");
+            window.location = "/gracias";
           /* const order = await actions.order.capture();
           console.log(order); */
         },

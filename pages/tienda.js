@@ -10,7 +10,7 @@ import Features from "../components/Landing/Features";
 export default function IndexPage() {
 
   const page = {
-    title: "Tienda Capital MC",
+    title: "Tienda CapitalMC",
     desc: "Todo el dinero recaudado será principalmente destinado al mantenimiento, mejoras y actualizaciones del servidor. ¡Con tu compra estás contribuyendo a que sigamos mejorando y generando una gran comunidad!"
   }
   

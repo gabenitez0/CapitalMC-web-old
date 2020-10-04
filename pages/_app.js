@@ -22,6 +22,7 @@ export default class Layout extends App {
         </Head>
         <Nav/>
         <Component {...pageProps} />
+        <script src="https://www.paypal.com/sdk/js?client-id=AUz4sZaei_S9MSlqUwkn7t4pDFbE8RMFjpaHxfhyWm6nZyVnWqiu1yQkEtz5tn2GyuIvb2uwUAjg3G2n&locale=es_ES"></script>
 
         <style jsx global>{`
           ::selection {
@@ -116,7 +117,7 @@ export default class Layout extends App {
             justify-content: center;
             color: rgb(255, 255, 255);
             background-color: var(--color-primary);
-            min-height: 45px;
+            min-height: 38px;
             border-radius: 4px;
             font-family: inherit;
             font-weight: 700;
@@ -129,7 +130,6 @@ export default class Layout extends App {
             min-width: 120px;
             font-size: 14px;
             letter-spacing: 1px;
-            text-transform: uppercase;
           }
           .button-primary:hover {
             box-shadow: rgb(138 255 89 / 0.4) 0px 9px 20px -5px;

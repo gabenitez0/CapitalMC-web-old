@@ -6,7 +6,7 @@ export default function Nav() {
       <div className="nav">
         <Link href="/">
           <a>
-            <h2>Capital MC</h2>
+            <h2>CapitalMC</h2>
           </a>
         </Link>
         <div className="links">

@@ -40,6 +40,7 @@ export default function HeaderComp({page}) {
           .title {
             width: 100%;
             box-sizing: border-box;
+            text-shadow: 1px 1px 2px black;
           }
           h1, p{
             color: white;

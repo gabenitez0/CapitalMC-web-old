@@ -4,8 +4,8 @@ import TopDonors from './Sidebar/TopDonors';
 export default function Sidebar(){
     return (<>
         <section id="sidebar">
-            <Objetivos/>
             <TopDonors/>
+            <Objetivos/>
         </section>
         
         <style jsx>{`

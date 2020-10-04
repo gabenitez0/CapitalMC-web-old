@@ -5,8 +5,10 @@ export default function ToPDonors(){
             <p>Estos son los jugadores que más contribuyeron económicamente al servidor:</p>
             <b><ul>
                 <li>Carlosmax2273: $63.50 USD</li>
+                <li>WitherChief: $30.00 USD</li>
                 <li>Maxiquevedo: $10.00 USD</li>
-                <li>IamCris: $7.50 USD</li>
+                <li>IamCris: $7.00 USD</li>
+                <li>Rokiller111: $5.00 USD</li>
                 <li>Masterke28: $5.00 USD</li>
                 <li>Fali: $5.00 USD</li>
             </ul></b>

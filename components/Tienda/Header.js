@@ -3,7 +3,7 @@ export default function HeaderComp() {
     <section id="header">
       <header className="container">
         <div className="title">
-          <h1>Tienda Capital MC</h1>
+          <h1>Tienda CapitalMC</h1>
           <p>
           Todo el dinero recaudado será principalmente destinado al mantenimiento, mejoras y actualizaciones del servidor. ¡Con tu compra estás contribuyendo a que sigamos mejorando y generando una gran comunidad!
           </p>
@@ -26,6 +26,7 @@ export default function HeaderComp() {
           .title {
             width: 100%;
             box-sizing: border-box;
+            text-shadow: 1px 1px 2px black;
           }
           h1, p{
             color: white;
