@@ -28,7 +28,7 @@ export default function Services() {
         "VIP PERMANENTE!",
         "+500 Tokens GRATIS!",
         "1 Kit Completo de Armaduras y Herramientas de Netherite",
-        "Todos los beneficios de Vip y Vip+",
+        "Todos los beneficios de Vip",
         "Todas las modificaciones de mejora del rango a futuro están incluidas"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C5TFAUFW86W7L",
