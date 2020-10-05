@@ -87,7 +87,7 @@ export default function Services() {
       id: 0,
       img: "/static/tienda/500tokens.jpg",
       title: "500 Tokens",
-      price: "3.00",
+      price: "2.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ENN4XUGJ5BFYU",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-76fc8c47-50d6-4d8a-b493-8d5016b028fe"
@@ -96,7 +96,7 @@ export default function Services() {
       id: 1,
       img: "/static/tienda/1000tokens.jpg",
       title: "1000 Tokens",
-      price: "5.00",
+      price: "10.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FW52J8AEK8R9W",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-641c1f03-9aef-490f-af14-43296ec1cf48"
@@ -104,8 +104,8 @@ export default function Services() {
     {
       id: 2,
       img: "/static/tienda/3000tokens.jpg",
-      title: "3000 Tokens",
-      price: "10.00",
+      title: "1500 + 1500 Tokens",
+      price: "15.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ADLK5TC6FS5QE",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-fb3e3855-0b64-4262-b14e-618e92c86f3c"
@@ -113,8 +113,8 @@ export default function Services() {
     {
       id: 3,
       img: "/static/tienda/5000tokens.jpg",
-      title: "5000 Tokens",
-      price: "15.00",
+      title: "2000 + 3000 Tokens",
+      price: "20.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAGPN5WQBHTEG",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-819be03f-a6ec-4e34-b8e0-fc4328d50583"
