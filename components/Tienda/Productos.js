@@ -87,7 +87,7 @@ export default function Services() {
       id: 0,
       img: "/static/tienda/500tokens.jpg",
       title: "500 Tokens",
-      price: "2.00",
+      price: "5.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ENN4XUGJ5BFYU",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-76fc8c47-50d6-4d8a-b493-8d5016b028fe"
