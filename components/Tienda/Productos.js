@@ -103,8 +103,8 @@ export default function Services() {
     },
     {
       id: 2,
-      img: "/static/tienda/3000tokens.jpg",
-      title: "1500 + 1500 Tokens",
+      img: "/static/tienda/1500tokens.jpg",
+      title: "1500 Tokens (+500)",
       price: "15.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ADLK5TC6FS5QE",
@@ -112,8 +112,8 @@ export default function Services() {
     },
     {
       id: 3,
-      img: "/static/tienda/5000tokens.jpg",
-      title: "2000 + 3000 Tokens",
+      img: "/static/tienda/2000tokens.jpg",
+      title: "2000 Tokens (+1000)",
       price: "20.00",
       features: [],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAGPN5WQBHTEG",
