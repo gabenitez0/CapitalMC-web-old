@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
+
 export default function Paypal({price, name}) {
   const paypalRef = useRef();
 
@@ -24,7 +25,7 @@ export default function Paypal({price, name}) {
           return actions.order.create({
             purchase_units: [
               {
-                description: product.description,
+                description: product.name,
                 amount: {
                   currency_code: 'USD',
                   value: product.price,
@@ -34,17 +35,13 @@ export default function Paypal({price, name}) {
           });
         },
         onApprove: async (data, actions) => {
-            console.log("exito");
-            window.location = "/gracias";
-          /* const order = await actions.order.capture();
-          console.log(order); */
-        },
-        onError: err => {
-            console.log("error");
-        },
+          const order = await actions.order.capture();
+          console.log(order);
+          window.location = "/gracias";
+        }
       })
       .render(paypalRef.current);
-  }}, [product.description, product.price]);
+  }}, [product.name, product.price]);
   
   return <div ref={paypalRef}></div>
 }
