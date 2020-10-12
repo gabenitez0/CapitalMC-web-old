@@ -61,7 +61,7 @@ export default function Services() {
         "/Sethome: 6 Sethomes + Bed home"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EJDL6FCSGWJWE",
-      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-0ae43d31-d471-45b6-b2d4-334b61fe1c19"
+      mercadopago: "https://mpago.la/27gYqEi"
     },
     {
       id: 0,
@@ -82,7 +82,7 @@ export default function Services() {
         "/Sethome: 3 Sethomes + Bed home"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7BDC45Z2KGWK2",
-      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-1f962917-e564-474a-ae27-0f5fb0053e9c"
+      mercadopago: "https://mpago.la/2gZuVJk"
     },
   ];
 
@@ -106,7 +106,7 @@ export default function Services() {
         "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAGPN5WQBHTEG",
-      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-819be03f-a6ec-4e34-b8e0-fc4328d50583"
+      mercadopago: "https://mpago.la/2JPFmwk"
     },
     {
       id: 2,
@@ -127,7 +127,7 @@ export default function Services() {
         "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ADLK5TC6FS5QE",
-      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-fb3e3855-0b64-4262-b14e-618e92c86f3c"
+      mercadopago: "https://mpago.la/1E6pdZm"
     },
     {
       id: 1,
@@ -147,7 +147,7 @@ export default function Services() {
         "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FW52J8AEK8R9W",
-      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-641c1f03-9aef-490f-af14-43296ec1cf48"
+      mercadopago: "https://mpago.la/24sTxUL"
     },
     {
       id: 0,
@@ -167,7 +167,7 @@ export default function Services() {
         "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ENN4XUGJ5BFYU",
-      mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-76fc8c47-50d6-4d8a-b493-8d5016b028fe"
+      mercadopago: "https://mpago.la/2TR5oas"
     }
   ]
 
