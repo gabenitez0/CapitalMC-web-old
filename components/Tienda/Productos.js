@@ -102,7 +102,8 @@ export default function Services() {
         "Coins para Skywars",
         "Cristales para Skyblock",
         "Se agregarán más tiendas y objetos",
-        "Recibes en total 3000 Tokens"
+        "Recibes en total 3000 Tokens",
+        "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SAGPN5WQBHTEG",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-819be03f-a6ec-4e34-b8e0-fc4328d50583"
@@ -122,7 +123,8 @@ export default function Services() {
         "Coins para Skywars",
         "Cristales para Skyblock",
         "Se agregarán más tiendas y objetos",
-        "Recibes en total 2000 Tokens"
+        "Recibes en total 2000 Tokens",
+        "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ADLK5TC6FS5QE",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-fb3e3855-0b64-4262-b14e-618e92c86f3c"
@@ -141,7 +143,8 @@ export default function Services() {
         "Partículas de Efectos",
         "Coins para Skywars",
         "Cristales para Skyblock",
-        "Se agregarán más tiendas y objetos"
+        "Se agregarán más tiendas y objetos",
+        "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FW52J8AEK8R9W",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-641c1f03-9aef-490f-af14-43296ec1cf48"
@@ -160,7 +163,8 @@ export default function Services() {
         "Partículas de Efectos",
         "Coins para Skywars",
         "Cristales para Skyblock",
-        "Se agregarán más tiendas y objetos"
+        "Se agregarán más tiendas y objetos",
+        "Puedes ver la tienda de tokens dentro del juego con: /tokens"
       ],
       paypal: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ENN4XUGJ5BFYU",
       mercadopago: "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=67919268-76fc8c47-50d6-4d8a-b493-8d5016b028fe"
