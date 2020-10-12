@@ -2,7 +2,7 @@ export default function Objetivos(){
     return (<>
         <div className="objetivos">
             <h3>¿Te gusta el servidor?</h3>
-            <p>El costo de mantenimiento mensual del servidor es de $40 USD. Con tu compra estas ayudando a que el server permanezca online.</p>
+            <p>El costo de mantenimiento mensual es de $40 USD. Con tu compra estas ayudando a que el servidor permanezca online y pueda seguir mejorando.</p>
         </div>
         <style jsx>{`
             .objetivos{
