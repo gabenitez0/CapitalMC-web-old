@@ -26,6 +26,7 @@ export default function Producto({r}) {
         <div className="detalles">
         <h2>{r.title}</h2>
         <span>${r.price} USD</span>
+        <h4>{r.featuresTitle}</h4>
         <ul>
             {r.features.map(f =>
             <li key={Math.random()}>{f}</li>
@@ -58,17 +59,25 @@ export default function Producto({r}) {
     margin-top: 15px!important;
     background: #84445b;
   }
-  h2{
-    margin: 5px 0;
-    line-height: 1.4
-  }
   span{
-    margin: 20px 0 30px;
+    margin: 5px 0 40px;
     display: block;
+  }
+  h2{
+    line-height: 1.4;
+    font-size: 30px;
   }
   h3 {
     margin: 0;
     padding: 0 20px;
+  }
+  h4 {
+    margin: 0;
+    color: var(--color-secondary);
+  }
+  ul{
+    margin: 10px 0 40px;
+    color: var(--color-secondary);
   }
   .buy-buttons{
     margin-top: 20px;
@@ -79,7 +88,7 @@ export default function Producto({r}) {
     width: 100%;
     min-height: 36px;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     text-transform: none;
     letter-spacing: 0;
     font-weight: unset;
