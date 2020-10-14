@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import Paypal from './mediosPago/paypal';
 
 export default function Producto({r}) {
     const [visible, setVisible] = useState(false);
