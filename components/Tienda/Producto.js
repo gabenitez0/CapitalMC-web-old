@@ -35,13 +35,18 @@ export default function Producto({r}) {
         <p>Tu nick en el server:</p>
         <input type="text"/>
         <div className="buy-buttons">
-            <Paypal price={r.price} name={r.title}/>
-            <a className="button-primary"
+          <a className="button-primary paypal"
+            href="https://paypal.me/1tiendaonline" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <sup>Pagar con</sup> <b>Paypal</b>
+          </a>
+          <a className="button-primary"
             href={r.mercadopago} 
             target="_blank" 
             rel="noopener noreferrer">
             <sup>Pagar con</sup> <b>MercadoPago</b>
-            </a>
+          </a>
         </div>
           <a className="cerrar" onClick={() => setVisible(false)}> ← Cerrar </a>
         </div>
@@ -80,22 +85,27 @@ export default function Producto({r}) {
     color: var(--color-secondary);
   }
   .buy-buttons{
-    margin-top: 20px;
+    margin: 20px 0;
   }
   a.button-primary{
     background: #009cde;
     color: white;
     width: 100%;
     min-height: 36px;
-    margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-transform: none;
     letter-spacing: 0;
     font-weight: unset;
     font-size: 15px;
   }
+  a.paypal{
+    background: #0070ba;
+  }
+  a.button-primary:hover{
+    opacity: .9;
+  }
   sup{
-    top: -3px;
+    top: -2px;
     margin-right: 3px;
     position: relative;
   }

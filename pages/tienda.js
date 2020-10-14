@@ -17,7 +17,7 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>Promo 50% OFF + Tokens Gratis | Tienda CapitalMC</title>
+        <title>Tienda CapitalMC</title>
         <meta
           name="description"
           content="Tienda Oficial de Rangos Vip y Tokens de Capital Minecraft"
