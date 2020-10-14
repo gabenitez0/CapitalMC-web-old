@@ -83,7 +83,7 @@ export default function Features() {
         }
         .image {
           width: 50%;
-          background: url("/static/feature.png");
+          background: url("/static/feature.webp");
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;

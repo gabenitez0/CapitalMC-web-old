@@ -24,7 +24,7 @@ export default function HeaderComp({page}) {
       <style jsx>
         {`
           section {
-            background-image: url("/static/header2.jpg");
+            background-image: url("/static/header2.webp");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
