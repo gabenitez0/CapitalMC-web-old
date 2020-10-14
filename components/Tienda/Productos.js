@@ -174,6 +174,15 @@ export default function Services() {
   return (
     <section id="services">
       <div className="title-section">
+        <h2>Rangos</h2>
+      </div>
+      <div className="services">
+        {rangos.map(r => 
+          <Producto key={r.id} r={r}/>
+        )}
+      </div>
+
+      <div className="title-section">
         <h2>Tokens</h2>
       </div>
       <div className="services">
@@ -182,14 +191,6 @@ export default function Services() {
         )}
       </div>
 
-      <div className="title-section">
-        <h2>Rangos</h2>
-      </div>
-      <div className="services">
-        {rangos.map(r => 
-          <Producto key={r.id} r={r}/>
-        )}
-      </div>
 
       <style jsx>{`
         section {
