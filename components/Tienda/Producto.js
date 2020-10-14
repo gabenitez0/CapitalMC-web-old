@@ -7,6 +7,8 @@ export default function Producto({r}) {
       zIndex: visible ? 10 : -1,
       opacity: visible ? 1 : 0
     }
+
+    const paypal = "https://paypal.me/1tiendaonline/"+r.price
     return(
 <>
     <div key={r.id} className="service" onClick={() => setVisible(true)}>
@@ -36,7 +38,7 @@ export default function Producto({r}) {
         <input type="text"/>
         <div className="buy-buttons">
           <a className="button-primary paypal"
-            href="https://paypal.me/1tiendaonline" 
+            href={paypal}
             target="_blank" 
             rel="noopener noreferrer">
             <sup>Pagar con</sup> <b>Paypal</b>
